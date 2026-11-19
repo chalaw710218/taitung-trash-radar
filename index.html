@@ -962,26 +962,26 @@
         <div class="service-pill">生活管家，就醬點！專屬服務</div>
         <h3 class="service-title">不想追垃圾車？讓生活管家替你天天搞定</h3>
         <p class="service-subtitle">
-          下班太晚趕不上？長輩提重物不方便？台東市區專人定時到府收運。
+          下班太晚趕不上？長輩提重物不方便？台東市區專人定時到府代倒。
         </p>
         <div class="service-tier-row">
           <div class="tier-box">
             <div class="tier-name">外圈彈性包月</div>
             <div class="tier-price">NT$ 999 <span>/月</span></div>
-            <div class="tier-feat">週收 2~3 次 · 門前免等待</div>
+            <div class="tier-feat">每週代倒 2~3 次 · 門前免等待</div>
           </div>
           <div class="tier-box highlighted">
             <div class="tier-badge">熱門首選</div>
             <div class="tier-name">全區專屬管家</div>
             <div class="tier-price">NT$ 1,999 <span>/月</span></div>
-            <div class="tier-feat">週收 5 次 · 垃圾+回收全包</div>
+            <div class="tier-feat">每週代倒 5 次 · 垃圾+回收全包</div>
           </div>
         </div>
         <div class="service-cta-block">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSchOskqPJfVtCVVEZpZuN2cHODjdAGSjyp184GkDpbFs-cqvw/viewform" target="_blank" rel="noopener noreferrer" class="btn-service-cta btn-tactile">
             💬 線上登記預約生活管家代倒
           </a>
-          <p class="service-guarantee">✨ 經專業背景查核 ｜ 專用密封袋防異味 ｜ 無接觸收取</p>
+          <p class="service-guarantee">✨ 經專業背景查核 ｜ 門前無接觸代倒 ｜ 安心守護</p>
         </div>
       </div>
     </aside>
@@ -997,7 +997,7 @@
     // 生活管家・台東垃圾車雷達核心邏輯引擎 (Neo ✕ Linus ✕ Josef 聯合實作)
     // ==========================================================================
 
-    const DATA_VERSION = "20261120_v1";
+    const DATA_VERSION = "20261120_v2";
     let LOCAL_SEED_ROUTES = [];
     let RECYCLING_SEED_ROUTES = [];
     let FIXED_STATIONS = [];
@@ -1448,11 +1448,11 @@
         }
 
         nearestDailyHtml = `
-          <!-- 原本日常最近站狀態對照 (解惑備註，置於卡片底層，不搶行動焦點) -->
+          <!-- 離您最近日常站狀態對照 (解惑備註，置於卡片底層，不搶行動焦點) -->
           <div class="nearest-daily-status-box">
             <span class="nearest-daily-pin">🏠</span>
             <div class="nearest-daily-content">
-              <div class="nearest-daily-title">原本離您最近的站：<strong>${nearestDailyStop.name}</strong>（距您約 ${nearestDailyStop.dist} 公尺）</div>
+              <div class="nearest-daily-title">離您最近的站：<strong>${nearestDailyStop.name}</strong>（距您約 ${nearestDailyStop.dist} 公尺）</div>
               <div>${statusText}</div>
             </div>
           </div>
